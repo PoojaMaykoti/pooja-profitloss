@@ -1,0 +1,55 @@
+
+
+body {
+    /* text-align: center;
+     */
+     background-color: #151515;
+}
+
+label
+{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+
+h1
+{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+
+.main-container
+{
+   margin-left: 34%;
+   
+}
+label{
+    /* width: 50px; */
+    color: white;
+}
+input{
+    width: 300px;
+    height: 25px;
+    background-color: rgb(37, 37, 37);
+}
+#submit-btn
+{
+    margin-top: 20px;
+    width: 310px;
+    height: 35px;
+    /* margin-left: 33%; */
+    background-color: rgb(31, 81, 231);
+    border-style: none;
+    color: white;
+    font-size: large;
+
+}
+#output-box
+{
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
