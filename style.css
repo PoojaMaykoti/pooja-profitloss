@@ -1,8 +1,8 @@
 
 
 body {
-    /* text-align: center;
-     */
+    
+     
      background-color: #151515;
 }
 
@@ -21,20 +21,36 @@ h1
 }
 
 
+
 .main-container
 {
-   margin-left: 34%;
+    
+    margin-left: 34%;
+    padding-top: 30px;
    
 }
-label{
-    /* width: 50px; */
+
+
+
+label
+{
+   
     color: white;
 }
-input{
+
+
+input
+{
     width: 300px;
     height: 25px;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(49, 49, 49);
+    color: white;
+    
+   
 }
+
+
+
 #submit-btn
 {
     margin-top: 20px;
@@ -47,6 +63,8 @@ input{
     font-size: large;
 
 }
+
+
 #output-box
 {
     margin-top: 30px;
