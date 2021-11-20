@@ -3,7 +3,8 @@
 body {
 
 
-     background-color: #FEF5E7;
+     background-color:#FDF2E9  ;
+     font-family: georgia;
 }
 
 label
@@ -16,9 +17,9 @@ label
 h1
 {
     text-align: center;
-
+    font-size: 40px;
     margin-top: 70px;
-    color: black;
+    color: #873600;
 }
 
 
@@ -26,7 +27,7 @@ h1
 .main-container
 {
 
-    margin-left: 34%;
+    margin-left: 37%;
     padding-top: 30px;
 
 }
@@ -42,11 +43,11 @@ label
 
 input
 {
-    width: 300px;
-    height: 25px;
-    background-color: rgb(49, 49, 49);
-    color: white;
-
+    width: 380px;
+    height: 33px;
+    /* background-color: rgb(49, 49, 49); */
+    /* color: white; */
+      border-radius: 10px;
 
 }
 
@@ -55,10 +56,10 @@ input
 #submit-btn
 {
     margin-top: 20px;
-    width: 310px;
-    height: 35px;
-    /* margin-left: 33%; */
-    background-color: rgb(31, 81, 231);
+    width: 380px;
+    height: 39px;
+    border-radius: 3px;
+    background-color:#D35400;
     border-style: none;
     color: white;
     font-size: large;
@@ -69,6 +70,7 @@ input
 #output-box
 {
     margin-top: 30px;
-    color: white;
+    color: #D35400;
     font-size: 20px;
+    margin-left: 36px;.
 }
