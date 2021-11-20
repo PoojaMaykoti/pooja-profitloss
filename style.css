@@ -1,9 +1,9 @@
 
 
 body {
-    
-     
-     background-color: #151515;
+
+
+     background-color: #FEF5E7;
 }
 
 label
@@ -24,17 +24,17 @@ h1
 
 .main-container
 {
-    
+
     margin-left: 34%;
     padding-top: 30px;
-   
+
 }
 
 
 
 label
 {
-   
+
     color: white;
 }
 
@@ -45,8 +45,8 @@ input
     height: 25px;
     background-color: rgb(49, 49, 49);
     color: white;
-    
-   
+
+
 }
 
 
