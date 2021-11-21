@@ -16,9 +16,9 @@ label
 
 h1
 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 70px;
+     margin-left: 39%;
+    font-size: 39px;
+    margin-top: 80px;
     color: #873600;
 }
 
@@ -27,8 +27,8 @@ h1
 .main-container
 {
 
-    margin-left: 37%;
-    padding-top: 30px;
+    margin-left: 41%;
+    padding-top: 10px;
 
 }
 
@@ -58,11 +58,11 @@ input
     margin-top: 20px;
     width: 380px;
     height: 39px;
-    border-radius: 3px;
+    border-radius: 8px;
     background-color:#D35400;
     border-style: none;
     color: white;
-    font-size: large;
+    font-size:27px;
 
 }
 
