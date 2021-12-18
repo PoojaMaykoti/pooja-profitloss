@@ -1,6 +1,6 @@
-var initialPrice = document.querySelector("#initial-price");
+var buyPrice = document.querySelector("#initial-price");
 
-var stockQuantity = document.querySelector("#stock-quantity");
+var qty = document.querySelector("#stock-quantity");
 
 var currentPrice = document.querySelector("#current-price");
 
@@ -10,51 +10,72 @@ var outputBox = document.querySelector("#output-box");
 
 submitBtn.addEventListener("click", submitHandler);
 
+
 function submitHandler()
 {
-    var ip = Number (initialPrice.value);
-    var gty = Number (stockQuantity .value);
-    var curr =Number( currentPrice.value);
-
-    calculateProfitAndLoss(ip , gty , curr);
-
-}
+    var quantity= qty.value;
+    var buyP= buyPrice.value*quantity;
+    var currentP= currentPrice.value*quantity;
 
 
-
-
-function calculateProfitAndLoss(initial,quantity,current)
-{
-    if(initial > current)
+    if(currentP<buyP && Validate(quantity,buyP,currentP))
     {
-           var loss = (initial - current) * quantity;
-
-           var lossPercentage = (loss / initial)*100;
-
-           showOutput(`Hey the loss is ${loss} and the percent is ${lossPercentage}%`)
-
+       
+        var loss= buyP-currentP;
+        var lossPercent= (loss/buyP)*100;
+        ShowMessage(`Your loss is ${loss} & loss Percentage is ${lossPercent}%`);
     }
-
-    else if(current > initial)
+    else if(buyP<currentP && Validate(quantity,buyP,currentP))
+    
+    
     {
-         var profit = (current - initial) * quantity;
-
-         var profitPercentage = (profit / initial) * 100;
-
-         showOutput(`Hey the profit is ${profit} and the percent is ${profitPercentage}%`)
-
-
+      
+        var profit=currentP-buyP;
+        var ProfitPercent= (profit/buyP)*100;
+        ShowMessage(`Your profit is ${profit} & profit Percentage is ${ProfitPercent}%`);
     }
-
     else
     {
-       showOutput(`No pain no gain and no gain no pain`);
+  
+        if( Validate(quantity,buyP,currentP)===false){
 
-
+        }
+        
+        else{
+            ShowMessage(`You didn't face any Loss or Profit`);
+        }
+        
     }
 }
 
-function showOutput(message)
-{
-    outputBox.innerHTML = message;
+function Validate(quantity,buyP,currentP){
+
+    if(quantity>0 && buyP >0 && currentP >0){
+        return true;
+    }
+    else{
+        ShowMessage(`
+        
+        
+        
+        Enter valid number`);
+        return false;   
+    }
 }
+
+function ShowMessage(message){
+    outputBox.innerText=message;
+}
+    
+
+
+    
+   
+
+
+
+
+
+
+
+
